@@ -1,0 +1,625 @@
+/*
+author: mangcoding <mangcoding@gmail.com>
+design: muhammad avan
+url   : http://blog.mangcoding.com
+*/
+
+@font-face {
+    src: url("fonts/ProximaNovaSoft-Regular.otf");
+    font-family: "Proxima";
+}
+
+@font-face {
+    src: url("fonts/Rafale-BG.otf");
+    font-family: "Rafale-bg";
+}
+
+@font-face {
+    src: url("fonts/Roboto-Light.ttf");
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+@font-face {
+    src: url("fonts/Roboto-Regular.ttf");
+    font-family: "Roboto";
+}
+
+body {
+    font-family: "Roboto";
+    line-height: 1.5;
+    color: #565e75;
+    font-weight: 300;
+    background: #f2f6f7;
+}
+
+.container {
+    max-width: 1024px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+.title {
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    margin: 30px 0px;
+    font-weight: bold;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    color: #000f3a;
+}
+
+.soft-title {
+    color: #565e75;
+}
+
+.sub-title {
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    font-family: "Roboto";
+    font-family: 16px;
+    display: block;
+    color: #abb5cd;
+    font-weight: 300;
+    margin-top: -20px;
+}
+
+.heading::after {
+    display: block;
+    content: "";
+    border-bottom: solid 4px #e40f13;
+    width: 60px;
+}
+
+.heading.text-center::after {
+    margin: 20px auto;
+}
+
+.heading::after {
+    margin-top: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-reverse {
+    -webkit-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+}
+
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+.margin-10 {
+    margin: 10px 0px !important;
+}
+
+.btn {
+    transition: all 0.2s;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    padding: 7px 30px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    border-radius: 0px;
+}
+
+.color-red {
+    color: #e40f13;
+}
+
+.bg-read {
+    background: #e40f13;
+    color: #FFF;
+}
+
+.bg-white,
+.bg-red:hover,
+.border-white:hover {
+    border: solid 1px #FFF;
+    color: #e40f13;
+    background: #FFF;
+}
+
+.border-white,
+.bg-white:hover {
+    border: solid 1px;
+    color: #FFF;
+    background: none;
+}
+
+.txt-white {
+    color: #FFF;
+}
+
+.txt-strong {
+    font-weight: bold;
+}
+
+.no-radius {
+    border-radius: 0;
+}
+
+.flex-center {
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#topmenu>.logo a,
+footer .logo a {
+    background: url('img/logo/logo-white.png')no-repeat;
+    display: inline-block;
+    text-indent: -999px;
+    width: 153px;
+    height: 35px;
+}
+
+#topmenu::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+header {
+    background: #e40f13;
+}
+
+header.header-full {
+    background: url('img/bg-header.png') no-repeat center center;
+    background-size: cover;
+    min-height: 725px;
+}
+
+header #topmenu {
+    padding: 20px 0px;
+}
+
+header #topmenu .btn {
+    text-transform: uppercase;
+}
+
+header .slider .text-slider {
+    color: #FFF;
+}
+
+header .slider .text-slider p {
+    font-family: "Proxima";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    padding-bottom: 20px;
+    letter-spacing: 1.2px;
+}
+
+#featured-content {
+    background: #FFF;
+    margin-bottom: -120px;
+}
+
+.bg-white-offsett {
+    padding: 20px 50px;
+    margin: 0px -50px;
+    background: #FFF;
+    top: -120px;
+    position: relative;
+}
+
+#featured {
+    padding: 40px 0px;
+}
+
+#featured .featured-item {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 30px #f6f6f6;
+}
+
+#featured .col-md-4:first-child>.featured-item {
+    margin-left: 0px;
+}
+
+#featured .col-md-4:last-child>.featured-item {
+    margin-right: 0px;
+}
+
+#featured .featured-item .icon>img {
+    max-width: 120px;
+}
+
+#featured .featured-item p {
+    font-family: "Proxima";
+    font-weight: 300;
+    color: #abb5cd;
+}
+
+
+/* Testimonial css */
+
+#testimonial {
+    background: #f2f6f7;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(to left, #e40f13 55%, #f2f6f7 45%);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(to left, #e40f13 55%, #f2f6f7 45%);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(to left, #e40f13 55%, #f2f6f7 45%);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #e40f13 55%, #f2f6f7 45%);
+    /* Standard syntax */
+    padding: 100px 0px;
+}
+
+#testimonial {
+    overflow: hidden;
+}
+
+#testimonial>.container {
+    position: relative;
+}
+
+#testimonial>.container::before {
+    content: "\201C";
+    font-family: "Rafale-bg";
+    font-size: 700px;
+    color: #eaeeef;
+    top: -370px;
+    left: -30px;
+    position: absolute;
+}
+
+.testimonial {
+    overflow: hidden;
+}
+
+.testimonial>.row-testimonial {
+    cursor: pointer;
+    position: relative;
+}
+
+.testimonial>.row-testimonial::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.testimonial>.row-navigation {
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.testimonial>.row-navigation>.nav-left,
+.testimonial>.row-navigation>.nav-right {
+    margin: 5px;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.row-navigation>a:hover::before {
+    background: #FFF;
+    color: #e40f13;
+}
+
+.row-navigation>.nav-left::before,
+.row-navigation>.nav-right::before {
+    cursor: pointer;
+    font-size: 20px;
+    color: #FFF;
+    padding: 4px 15px;
+    font-family: "FontAwesome";
+    display: block;
+    border-radius: 50%;
+    border: solid 2px #FFF;
+}
+
+.row-navigation>.nav-left::before {
+    content: "\f104";
+}
+
+.row-navigation>.nav-right::before {
+    content: "\f105";
+}
+
+.testimonial {
+    padding: 0px 10px;
+}
+
+.testimonial-item {
+    background: #FFF;
+    padding: 25px;
+    float: left;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.img-cirlcle {
+    border-radius: 50%;
+}
+
+.testimonial-item::before {
+    content: "\201C";
+    display: block;
+    font-family: "Rafale-bg";
+    font-size: 160px;
+    color: #f2f2f2;
+    top: -62px;
+    left: 10px;
+    position: absolute;
+}
+
+.testimonial-item .testimonial-comments {
+    padding: 30px 10px 0px;
+    color: #828795;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.testimonial-item .testimonial-author {
+    padding: 0px 10px;
+}
+
+.testimonial-item .testimonial-author>span:not(:first-child) {
+    padding-left: 8px;
+}
+
+.testimonial-item .testimonial-author>.avatar {
+    width: 50px;
+    float: left;
+}
+
+.rate::before {
+    text-align: right;
+    font-family: "FontAwesome";
+    display: block;
+    color: #fff200;
+}
+
+.rate-1::before {
+    content: "\f005"
+}
+
+.rate-2::before {
+    content: "\f005\f005"
+}
+
+.rate-3::before {
+    content: "\f005\f005\f005"
+}
+
+.rate-4::before {
+    content: "\f005\f005\f005\f005"
+}
+
+.rate-5::before {
+    content: "\f005\f005\f005\f005\f005"
+}
+
+.testimonial-item .testimonial-author>.author {
+    letter-spacing: 1.5px;
+    float: left;
+    width: 50%;
+    color: #565e75;
+    font-size: 13px;
+}
+
+.testimonial-item .testimonial-author>.rate {
+    float: left;
+    width: 35%;
+}
+
+.testimonial-item .testimonial-author>.author i {
+    font-style: normal;
+    font-size: 11px;
+    color: #abb5cd;
+}
+
+.testimonial-item .testimonial-comments:after {
+    content: "";
+    border-bottom: solid 1px #f2f2f2;
+    margin: 35px 0px;
+    display: block;
+}
+
+
+/* Agen */
+
+#agen {
+    background: url("img/bg-daftar-agen.png") no-repeat center center;
+    background-size: cover;
+}
+
+#agen .heading {
+    padding: 100px 0px;
+}
+
+.agen-item:nth-child(-n+3) {
+    margin-bottom: 20px;
+}
+
+.agen-item:nth-child(3n):after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 20px;
+}
+
+.agen-item:not(:nth-child(-n+3)) {
+    margin: 30px 0px;
+}
+
+.agen-item>img {
+    width: 70px;
+    height: 70px;
+    float: left;
+    max-width: 30%;
+}
+
+.agen-item>.agen-detail {
+    width: 70%;
+    margin-left: 10px;
+    float: left;
+    color: #abb5cd;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+}
+
+.agen-detail>h5 {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #565e75;
+}
+
+
+/* pagination */
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #abb5cd;
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Roboto"
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover,
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background: none;
+    color: #e40f13;
+    font-weight: bold;
+}
+
+footer {
+    background: #e40f13;
+}
+
+footer>.container {
+    padding: 20px 0px;
+}
+
+footer .copyright {
+    color: #f2f6f7;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding-top: 10px;
+}
+
+
+/* form registrasi */
+
+#form-register {
+    margin: 40px -50px;
+    overflow: hidden;
+    background: #FFF;
+}
+
+#form-register .form-register {
+    padding: 20px 50px;
+}
+
+#form-register .form-register form>legend {
+    margin: 20px 0px;
+    border-bottom: none;
+    color: #565e75;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+#form-register .form-control {
+    border-radius: 0px;
+    border: solid 2px #e2e5e7;
+    color: #b8bdbf;
+    box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder,
+.form-control:-moz-placeholder,
+.form-control::-moz-placeholder,
+.form-control:-ms-input-placeholder,
+.form-control::-ms-input-placeholder {
+    color: #b8bdbf;
+    font-family: "Proxima";
+    letter-spacing: 1.5px;
+}
+
+#form-register .form-slider {
+    color: #FFF;
+    background: url('img/register.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 600px;
+}
+
+#form-register .form-slider>.bg-text {
+    position: absolute;
+    bottom: 100px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#form-register .btn-forget,
+#form-register span {
+    display: block;
+    margin: 20px 0px;
+    color: #abb5cd;
+    letter-spacing: 1.5px;
+}
+
+#about,
+#membership,
+#vision {
+    padding: 30px 0px;
+    color: #7e7e7e;
+    letter-spacing: 1.2px;
+}
+
+.content-title {
+    margin: 30px 0px;
+    letter-spacing: 1px;
+    color: #545454;
+}
+
+#about,
+#vision {
+    background: #FFF;
+}
+
+#membership {
+    background: #f2f6f7;
+}
+
+#about p,
+#membership p,
+#vision p {
+    margin-top: 40px;
+}
+
+#about .title-resume {
+    font-style: italic;
+    border-left: solid 5px #e40f13;
+    padding-left: 20px;
+}
